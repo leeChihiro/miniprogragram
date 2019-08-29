@@ -1,0 +1,16 @@
+<template name="article-template">
+  <view class='container'>
+    <view class="container-left">
+      <image src="{{IMAGE[0]}}"></image>
+    </view>
+    <view class="container-right">
+      <view class='container-right-t'>
+        <text>{{TITLE}}</text>
+      </view>
+
+      <view class='container-right-b'>
+        <text>{{TEXT}}</text>
+      </view>
+    </view>
+  </view>
+</template>

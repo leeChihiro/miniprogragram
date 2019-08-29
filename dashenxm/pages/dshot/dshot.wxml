@@ -1,0 +1,39 @@
+<!--pages/dshot/dshot.wxml-->
+<view>
+  <view class="hot-top">
+    <view class="hot-top-img">
+      <image src="/images/hot/hotbg.png"></image>
+    </view>
+    <view class="hot-top-content">
+      <image src="/images/hot/dshot.png"></image>
+      <text>日常快报</text>
+      <view>2018年8月29日</view>
+    </view>
+  </view>
+
+  <view class="hot-bottom">
+    <view class="hot-container">
+      <view class="hot-banner">
+        <image src="/images/hot/hotbanner.png"></image>
+        <text>运动装备大促销全场六折</text>
+      </view>
+      <view class="hot-container-text">
+        <view class="hot-container-text1">
+          <image src="/images/hot/containerimg.png"></image>
+          <text>购买商品赠送门票啦！</text>
+          <view></view>
+        </view>
+        <view class="hot-container-text2">
+          <image src="/images/hot/containerimg.png"></image>
+          <text>大神科技上市了</text>
+          <view></view>
+        </view>
+        <view class="hot-container-text3">
+          <image src="/images/hot/containerimg.png"></image>
+          <text>运动服装打折促销</text>
+          <view></view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

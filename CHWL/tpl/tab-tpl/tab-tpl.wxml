@@ -1,0 +1,30 @@
+<template name='tabTpl'>
+  <view class='panel'>
+    <view class='tab-con'>
+      <block wx:for='{{detail.con}}' wx:for-index='key' wx:for-item='val' wx:key='unique'>
+        <view class='con-item' wx:if='{{obj[key].state}}'>
+          <text class='tag-info'>{{val.tag}}</text>
+          <image class='tag-bg' src='{{val.bg}}'></image>
+          <image src='{{val.url}}'></image>
+        </view>
+      </block>
+    </view>
+    <view class='tab-nav'>
+      <block wx:for='{{obj}}' wx:for-index='i' wx:for-item='v' wx:key='unique'>
+        <view class='nav-item {{index==i?"active":""}}' data-id='{{i}}' data-tab='{{v.tab}}' catchtap='onTabSwitch'>
+          <image src='{{v.url}}'></image>
+          <text class='triangle'></text>
+        </view>
+      </block>
+    </view>
+    <view class='shop-info'>
+      <view class='portrait-name'>
+        <image src='{{detail.shop.portrait}}'></image>
+        <text>{{detail.shop.name}}</text>
+      </view>
+      <view class='shop-btn'>
+        <text>进店</text>
+      </view>
+    </view>
+  </view>
+</template>

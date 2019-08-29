@@ -1,0 +1,170 @@
+@import"../../wxParse/wxParse.wxss";
+
+/* .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.head-image {
+  width: 100%;
+  height: 460rpx;
+}
+
+.title {
+  margin-left: 40rpx;
+  font-size: 36rpx;
+  font-weight: 700;
+  margin-top: 30rpx;
+  letter-spacing: 2px;
+  color: #4b556c;
+}
+
+.detailText {
+  margin-left: 40rpx;
+  margin-top: 20rpx;
+}
+
+.tool {
+  margin-top: 20rpx;
+}
+
+.btn {
+  float: left;
+  margin-left: 40rpx;
+  vertical-align: middle;
+}
+
+.circle-img {
+  float: right;
+  margin-left: 40rpx;
+  vertical-align: middle;
+}
+
+.circle-img Image {
+  width: 90rpx;
+  height: 90rpx;
+}
+
+.horizon {
+  width: 660rpx;
+  height: 1px;
+  background-color: #e5e5e5;
+  vertical-align: middle;
+  position: relative;
+  top: 46rpx;
+  margin: 0 auto;
+  z-index: -99;
+}
+
+.detail {
+  color: #666;
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+  margin-right: 30rpx;
+  line-height: 44rpx;
+  letter-spacing: 2px;
+} */
+
+@import '/tpl/nav-tpl/nav-tpl.wxss';
+
+.p-body{
+  padding-top: 128rpx; 
+  padding-bottom: 286rpx;
+}
+
+.p-body image{
+  height: 400rpx;
+}
+
+.panel-heading{
+  display: flex;
+  align-items: center;
+  height: 100rpx;
+  padding: 0 30rpx;
+  border-bottom: 1rpx solid #f6f6f6;
+}
+.panel-heading text{
+  font-size: 30rpx;
+}
+
+.panel-body .bar-item:last-child{
+  border-bottom: none;
+}
+.bar-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100rpx;
+  margin: 0 30rpx;
+  border-bottom: 1rpx solid #f6f6f6;
+}
+.bar-item text{
+  font-size: 28rpx;
+  color: #666;
+}
+.bar-item image{
+  width: 56rpx;
+  height: 56rpx;
+}
+
+.detail-info{
+  padding: 0 30rpx;
+}
+.detail-info .title{
+  padding-top: 14rpx;
+}
+.detail-info .title text{
+  font-size: 28rpx;
+  line-height: 50rpx;
+}
+.detail-info .desc{
+  padding-bottom: 38rpx;
+}
+.detail-info .desc text{
+  font-size: 24rpx;
+  color: #666;
+  line-height: 40rpx;
+}
+
+.p-footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 36rpx 30rpx 10rpx 30rpx;
+  border-radius: 16rpx 16rpx 0 0;
+  box-sizing: border-box;
+  box-shadow: 0 0 10rpx 2rpx rgba(0, 0, 0, .15);
+  background-color: #fff;
+}
+.coupon-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100rpx;
+  padding: 0 30rpx;
+  margin-bottom: 20rpx;
+  border-radius: 6rpx;
+  background-color: #f1ae2d;
+}
+.coupon-item text{
+  font-size: 30rpx;
+}
+.coupon-item .title{
+  width: 484rpx;
+  color: #fff;
+  line-height: 50rpx;
+  border-right: 2rpx dashed rgba(255, 255, 255, .6);
+}
+.coupon-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120rpx;
+  height: 60rpx;
+  border-radius: 4rpx;
+  box-shadow: 0 0 5rpx 2rpx rgba(0, 0, 0, .11);
+  background-color: #fff;
+}
+.coupon-btn text{
+  color: #f1ae2d;
+}

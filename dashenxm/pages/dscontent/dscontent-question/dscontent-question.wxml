@@ -1,0 +1,5 @@
+<view class="container">
+  <image class="question-img" src="/images/login/userlogin.png"></image>
+  <text class="title">{{data.title}}</text>
+  <text class="moto">{{data.text}}</text>
+</view>

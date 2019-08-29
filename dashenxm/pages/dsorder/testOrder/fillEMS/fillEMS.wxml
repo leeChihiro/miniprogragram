@@ -1,0 +1,11 @@
+<!--pages/dsoutlogin/dsoutlogin.wxml-->
+<view class="container">
+  <view class="fillEMS-input">
+    <text>快递单号：</text>
+    <input type='text' name="ems" placeholder="请输入快递单号" bindinput="emsInput"></input>
+  </view>
+  <view style="width:750rpx; height:1px; background:#cccccc;"></view>
+  <view class="confirm">
+    <button bindtap="BtnClick">确认发送</button>
+  </view>
+</view>

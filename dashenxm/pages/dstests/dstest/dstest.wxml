@@ -1,0 +1,20 @@
+<view class="container">
+  <swiper indicator-dots="turn" indicator-active-color="#22ad38">
+    <block wx:for="{{test}}" wx:for-item="testItem" wx:key="index">
+      <swiper-item>
+        <view class='ToTestDetails' bindtap='ToTestDetails' data-testId="{{testItem.JCB_ID}}" data-title="{{testItem.TITLE}}" data-price="{{testItem.PRICE}}">
+          <image src="{{testItem.IMAGE[0]}}"></image>
+          <view class="TestText">
+            <text class="TestTitle">{{testItem.TITLE}}</text>
+            <text class="TestPrice">￥{{testItem.PRICE}}</text>
+            <text style='margin: 20rpx 10rpx 0; font-color:#666666;'>准确率96.8%</text>
+            <text style='margin: 20rpx 10rpx 0; font-color:#666666;'>除新疆西藏之外,全国顺丰包邮</text>
+            <text style='margin: 20rpx 10rpx 0; font-weight: bolder; font-color:#000000;'>点击进入详情</text>
+          </view>
+        </view>
+      </swiper-item>
+      <view class="bottom" bindtap='ToTestDetails' data-testId="{{testItem.JCB_ID}}" data-title="{{testItem.TITLE}}" data-price="{{testItem.PRICE}}">下一步</view>
+    </block>
+  </swiper>
+
+</view>

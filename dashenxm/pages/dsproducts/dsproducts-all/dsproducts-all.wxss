@@ -1,0 +1,40 @@
+@import "../product-grid/product-grid-template.wxss";
+
+page {
+  height: 100%;
+}
+.swiper-tab {
+  width: 100%;
+  border-bottom: 2rpx solid #ccc;
+  text-align: center;
+  height: 88rpx;
+  line-height: 88rpx;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  margin-bottom: 30rpx;
+  font-size: 28rpx;
+  color: #666;
+}
+
+.swiper-tab-item {
+  width: 25%;
+  color: #434343;
+}
+
+.active {
+  color: #f65959;
+  border-bottom: 4rpx solid #f65959;
+}
+
+swiper {
+  height: 110%;
+}
+
+.product-b {
+  width: 750rpx;
+  height: 100rpx;
+  color: #666;
+  line-height: 100rpx;
+  text-align: center;
+}

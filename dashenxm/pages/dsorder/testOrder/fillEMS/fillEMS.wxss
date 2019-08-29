@@ -1,0 +1,34 @@
+/* pages/dsoutlogin/dsoutlogin.wxss */
+
+page {
+  background: #cdcdcd;
+}
+
+.container {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fillEMS-input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20rpx;
+  justify-content: space-around;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+
+.confirm button{
+  width: 500rpx;
+  height: 100rpx;
+  background: #32cd99;
+  border: 1px solid #32cd99;
+  border-radius: 50px;
+  text-align: center;
+  color: #fff;
+  line-height: 100rpx;
+  margin: 20rpx;
+}

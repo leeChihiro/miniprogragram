@@ -1,0 +1,59 @@
+<import src="../dsknowledges/knowledges/knowledges-template.wxml" />
+
+<view class="home">
+  <view>
+    <swiper indicator-dots="Boolean" autoplay="Boolean" interval="3000" duration="800">
+      <swiper-item>
+        <image src="/images/product/banner.jpg"></image>
+      </swiper-item>
+      <swiper-item>
+        <image src="/images/product/banner.jpg"></image>
+      </swiper-item>
+      <swiper-item>
+        <image src="/images/product/banner.jpg"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+
+  <view class="news-container">
+
+    <view class="news-search" bindtap='toSearch'>
+      <image class="news-search-img" src="/images/home/search.png"></image>
+      <text>物品搜索</text>
+    </view>
+
+    <view class="news-product">
+      <view class="news-product-1" bindtap='toTest'>
+        <image class="news-product-1-img" src="/images/home/product-img1.png"></image>
+        <text>{{Menus[0].TEXT}}</text>
+      </view>
+      <view style='width:1px; height:100rpx;border-right:1px solid #ffcc00;'></view>
+      <view class="news-product-2" bindtap='toProductIndex'>
+        <image class="news-product-2-img" src="/images/home/product-img2.png"></image>
+        <text>{{Menus[1].TEXT}}</text>
+      </view>
+    </view>
+
+    <view class="news-all">
+      <image class="news-all-img" src="/images/home/knowledge.png"></image>
+      <view class="news-all-more" bindtap="toKnowledge">
+        <text>更多</text>
+        <image class="news-all-more-img" src="/images/home/more.png"></image>
+      </view>
+    </view>
+
+    <view class="news">
+      <block wx:for="{{knowledges}}" wx:for-index='kindex' wx:for-item="knowledge" wx:key="index">
+        <view catchtap='ToKnowledgeDetails' data-knowsId="{{knowledge.ARTICLE_ID}}">
+          <template is="knowledgesTemplate" data="{{...knowledge}}" />
+        </view>
+      </block>
+      <view class="SeeWhole">
+        <view bindtap='toKnowledge'>
+          <text>查看全部</text>
+        </view>
+      </view>
+    </view>
+
+  </view>
+</view>

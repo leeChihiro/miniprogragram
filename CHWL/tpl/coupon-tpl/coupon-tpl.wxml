@@ -1,0 +1,19 @@
+<template name='couponTpl'>
+  <view class='coupon-container'>
+    <view class='coupon-heading'>
+      <image src='{{pic}}'></image>
+      <view class='coupon-info'>
+        <text class='title'>有效日期至：2018-04-25</text>
+        <text class='time'>有效日期至：2018-04-25</text>
+      </view>
+      <text class='coupon-status'>未使用</text>
+    </view>
+    <view class='coupon-body'>
+      <text class='rule'>满49元可用</text>
+      <view class='btn'>
+        <text>放弃</text>
+      </view>
+    </view>
+    <image class='bg' src='/images/coupon/coupon-bg.png'></image>
+  </view>
+</template>

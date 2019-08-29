@@ -1,0 +1,43 @@
+
+@import "testOrder-Pay/testOrder-Pay-Template.wxss";
+@import "testOrder-WaitSend/testOrder-WaitSend-Template.wxss";
+@import "testOrder-WaitTest/testOrder-WaitTest-Template.wxss";
+@import "testOrder-Complete/testOrder-Complete-Template.wxss";
+@import "testOrder-NotPay/testOrder-NotPay-Template.wxss";
+@import "testOrder-WaitTool/testOrder-WaitTool-Template.wxss";
+
+page {
+  height: 100%;
+}
+.swiper-tab {
+  width: 100%;
+  border-bottom: 2rpx solid #ccc;
+  text-align: center;
+  height: 88rpx;
+  line-height: 88rpx;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  color: #666;
+  font-size: 24rpx;
+}
+.swiper-tab-item {
+  width: 25%;
+  color: #434343;
+}
+.active {
+  color: #f65959;
+  border-bottom: 4rpx solid #f65959;
+}
+swiper {
+  height: 270%;
+  background: #CCCCCC;
+}
+
+/* .testOrder-b {
+  width: 750rpx;
+  height: 100rpx;
+  color: #666;
+  line-height: 100rpx;
+  text-align: center;
+} */

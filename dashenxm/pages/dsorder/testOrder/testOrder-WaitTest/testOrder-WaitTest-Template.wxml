@@ -1,0 +1,24 @@
+<template name="testOrder-WaitTest-Template">
+  <view class="dsorder-sample-bottom">
+  <view class="SegmentingLine"></view>
+    <view class="sample-bottom-t">
+      <image src="/images/order/time.png"></image>
+      <text style="margin-left:20rpx;">下单时间 : {{testOrder3Item.CREATED}}</text>
+      <text style="float:right; margin-right:20rpx;color:#e36e21;">检测中</text>
+    </view>
+    <view class="sample-bottom-m" bindtap='toDetails' data-jcbddid='{{testOrder3Item.JCBDD_ID}}'>
+      <image src="{{testOrder3Item.IMAGE[0]}}"></image>
+      <view>
+        <text>{{testOrder3Item.TITLE}}</text>
+        <text style="color:#c9c9c9; font-size:30rpx;">数量*1</text>
+      </view>
+    </view>
+    <view class="number">
+      <text>共1项检测合计 : {{testOrder3Item.PRICE}}元</text>
+    </view>
+    <view class="sample-bottom-fg"></view>
+    <view class="sample-bottom-b">
+      <text>样本检测中，请耐心等候</text>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,48 @@
+<!--pages/dsproduct-details/dsproduct-details.wxml-->
+<view class="product">
+  <view class="product-details-bannder">
+    <swiper indicator-dots="Boolean" autoplay="Boolean" interval="3000" duration="800" indicator-active-color="#ff5800">
+      <block wx:for="{{Products[0].IMAGE}}" wx:for-item="ProductsIMAGE" wx:key="index">
+        <swiper-item>
+          <image mode='aspectFit' style='height:375rpx;' src="{{ProductsIMAGE}}"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <view class="product-details-name">
+    <view class="product-details-name-t">
+      <text class="product-details-name-t-1">{{Products[0].TITLE}}</text>
+    </view>
+    <view class="product-details-name-b">
+      <text class="product-details-name-b-1">￥{{Products[0].PRICE}}</text>
+      <text class="product-details-name-b-2">销量{{Products[0].NUM}}</text>
+    </view>
+  </view>
+
+  <view class="product-details-specification" bindtap='toProductSpec' data-DetailsId="{{Products[0].ITEM_ID}}">
+    <text>请选择规格</text>
+    <image src="/images/product/more.png"></image>
+  </view>
+
+  <view class="product-details-details">
+    <view class="product-details-details-1">
+      <text>商品说明</text>
+    </view>
+    <view class="product-details-details-2">
+      <text>品牌 : durex</text>
+    </view>
+    <view class="product-details-details-3">
+      <text>产品说明 ：{{Products[0].TEXT}}</text>
+    </view>
+  </view>
+
+  <!-- <view class="product-details-img">
+    <image src="/images/product/product-1.png"></image>
+  </view> -->
+  <view style="width:750rpx; height:200rpx; background:#ffffff;"></view>
+
+  <view class="product-details-bottom" bindtap='toProductSpec' data-DetailsId="{{Products[0].ITEM_ID}}">
+    <text>立即购买</text>
+  </view>
+</view>

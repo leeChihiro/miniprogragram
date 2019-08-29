@@ -1,0 +1,63 @@
+@import '/tpl/nav-tpl/nav-tpl.wxss';
+
+page{
+  background: #f6f6f6
+}
+
+.p-body{
+  padding-top: 148rpx;
+}
+
+.shop-container{
+  padding: 20rpx;
+}
+.shop-container image{
+  width: 710rpx;
+  height: 340rpx;
+}
+.shop{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20rpx;
+}
+.shop-info{
+  display: flex;
+  align-items: center;
+}
+.shop-info image{
+  width: 70rpx;
+  height: 70rpx;
+}
+.shop-info text{
+  padding-left: 18rpx;
+  font-size: 30rpx;
+}
+.jump-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80rpx;
+  height: 40rpx;
+  margin: 0 8rpx;
+  border: 2rpx solid #ff2121;
+  border-radius: 20rpx;
+  box-sizing: border-box;
+}
+.jump-btn text{
+  font-size: 24rpx;
+  color: #ff2121;
+}
+
+.university-heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80rpx;
+  margin-top: -20rpx;
+}
+
+.university-heading text{
+  font-size: 36rpx;
+  color: #000000;
+}

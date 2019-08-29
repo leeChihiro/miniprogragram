@@ -1,0 +1,18 @@
+<view>
+  <view class='container'>
+    <view class='container-title'>
+      <text>{{reportData.TITLE}}</text>
+    </view>
+    <view class="container-img">
+      <block wx:for="{{reportData.YL1}}" wx:for-item="YL1Item" wx:key="index">
+        <image mode='widthFix' src='{{YL1Item}}'></image>
+      </block>
+    </view>
+    <!-- <view class="container-details">
+      <text>收货人：{{reportData.SHR}}</text>
+      <text>联系电话：{{reportData.PHONE}}</text>
+      <text>收货地址：{{reportData.ADDRESS}}</text>
+    </view> -->
+  </view>
+
+</view>

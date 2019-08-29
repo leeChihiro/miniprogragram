@@ -1,0 +1,92 @@
+.tab-con{
+  padding-top: 20rpx;
+}
+.tab-con .con-item{
+  position: relative;
+  padding: 0 20rpx;
+}
+.con-item .tag-info{
+  position: absolute;
+  width: 106rpx;
+  font-size: 22rpx;
+  color: #fff;
+  line-height: 39rpx;
+  text-align: center;
+  z-index: 9999;
+}
+.con-item .tag-bg{
+  position: absolute;
+  width: 123rpx;
+  height: 39rpx;
+}
+.con-item image{
+  width: 710rpx;
+  height: 340rpx;
+}
+.tab-nav{
+  display: flex;
+  justify-content: space-around;
+  padding: 20rpx 10rpx;
+}
+.tab-nav .nav-item{
+  width: 224rpx;
+  height: 130rpx;
+  border: 1px solid #f6f6f6;
+  box-sizing: border-box;
+}
+.tab-nav .nav-item{
+  position: relative;
+}
+.tab-nav .nav-item image{
+  width: 220rpx;
+  height: 126rpx;
+}
+.tab-nav .nav-item .triangle{
+  display: none;
+  position: absolute;
+  top: -48rpx;
+  left: 50%;
+  margin-left: -8rpx;
+  border: 16rpx solid transparent;
+  border-bottom-color: #fff;
+}
+.tab-nav .nav-item.active .triangle{
+  display: block;
+}
+
+.shop-info{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20rpx;
+  padding-bottom: 20rpx;
+}
+.shop-info .portrait-name{
+  display: flex;
+
+}
+.portrait-name image{
+  width: 70rpx;
+  height: 70rpx;
+}
+.portrait-name text{
+  padding-top: 20rpx;
+  padding-left: 19rpx;
+  padding-right: 23rpx;
+  font-size: 30rpx;
+  line-height: 40rpx;
+}
+.shop-info .shop-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120rpx;
+  height: 40rpx;
+  margin-top: 20rpx;
+  border: 2rpx solid #ff2121;
+  border-radius: 20rpx;
+  box-sizing: border-box;
+}
+.shop-info .shop-btn text{
+  font-size: 24rpx;
+  color: #ff2121;
+}

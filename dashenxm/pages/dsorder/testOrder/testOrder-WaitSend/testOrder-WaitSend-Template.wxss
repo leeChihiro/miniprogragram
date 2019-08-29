@@ -1,0 +1,88 @@
+.dsorder-sample-bottom {
+  width: 750rpx;
+  background: #fff;
+}
+
+.SegmentingLine {
+  width: 750rpx;
+  height: 25rpx;
+  background: #ccc;
+}
+
+.sample-bottom-t {
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 28rpx;
+}
+
+.sample-bottom-t image {
+  width: 32rpx;
+  height: 32rpx;
+  vertical-align: middle;
+  margin-left: 20rpx;
+}
+
+.sample-bottom-m {
+  width: 750rpx;
+  height: 200rpx;
+  background: #eee;
+  display: flex;
+  flex-direction: row;
+}
+
+.sample-bottom-m image {
+  vertical-align: middle;
+  width: 150rpx;
+  height: 150rpx;
+  margin-left: 20rpx;
+  margin-top: 25rpx;
+}
+
+.sample-bottom-m view {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 20rpx;
+}
+
+.number {
+  width: 750rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: right;
+}
+
+.number text {
+  margin-right: 20rpx;
+}
+
+.sample-bottom-fg {
+  width: 750rpx;
+  border-bottom: 1rpx solid #bfbfbf;
+}
+
+.sample-bottom-b {
+  width: 750rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.sample-bottom-b-btn {
+  width: 150rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  margin-right: 20rpx;
+  border: 1px solid #3c8cb1;
+  border-radius: 20px;
+  font-size: 30rpx;
+  text-align: center;
+  color: #3c8cb1;
+}
+.sample-bottom-b text {
+  font-size: 32rpx;
+  margin-right: 20rpx;
+  color: #333;
+}

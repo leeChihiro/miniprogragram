@@ -1,0 +1,70 @@
+<import src="../product-list/product-list-template.wxml" />
+<import src="../product-grid/product-grid-template.wxml" />
+<import src="../search-template/search-template.wxml" />
+
+<view class="product-index">
+  <view class="product-index-banner">
+    <swiper indicator-dots="Boolean" autoplay="Boolean" interval="3000" duration="800">
+      <swiper-item>
+        <image src='/images/product/banner.jpg'></image>
+      </swiper-item>
+      <swiper-item>
+        <image src='/images/product/banner.jpg'></image>
+      </swiper-item>
+      <swiper-item>
+        <image src='/images/product/banner.jpg'></image>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="product-search">
+    <input input type="text" name="search" placeholder="搜索" bindinput="searchInput" bindconfirm="searchProduct"></input>
+  </view>
+</view>
+
+<view class="product-class-container">
+  <view class="product-class" bindtap='toProductsCenter' data-Category="{{Category[0].SORT_ID}}">
+    <image src="/images/product/icon1.png"></image>
+    <text>{{Category[0].TYPENAME}}</text>
+  </view>
+  <view class="product-class" bindtap='toProductsCenter' data-Category="{{Category[1].SORT_ID}}">
+    <image src="/images/product/icon2.png"></image>
+    <text>{{Category[1].TYPENAME}}</text>
+  </view>
+  <view class="product-class" bindtap='toProductsCenter' data-Category="{{Category[2].SORT_ID}}">
+    <image src="/images/product/icon3.png"></image>
+    <text>{{Category[2].TYPENAME}}</text>
+  </view>
+  <view class="product-class" bindtap='toProductsCenter' data-Category="0">
+    <image src="/images/product/icon4.png"></image>
+    <text>全部</text>
+  </view>
+</view>
+
+<view class='search-product'>
+
+  <block wx:for="{{ProductData}}" wx:for-item="productItem" wx:key="index">
+    <view bindtap="toProductsDetails" data-DetailsId = "{{productItem.ITEM_ID}}">
+      <template is="search-template" data="{{...productItem}}" />
+    </view>
+  </block>
+</view>
+
+<view class='product-new'>
+  <view class='product-new-fg'></view>
+  <view class='product-new-detail'>
+    <view class='product-new-detail1'>
+      <image src="/images/product/dsnew.png"></image>
+    </view>
+    <text>11月11日日常用品全场8折</text>
+    <view class='product-new-detail2'>
+      <image src='/images/product/more2.png'></image>
+    </view>
+  </view>
+  <view class='product-new-fg'></view>
+</view>
+
+<view class="product-subject">
+  <view>
+    <template is="productGridTemplate" data="{{product}}" />
+  </view>
+</view>

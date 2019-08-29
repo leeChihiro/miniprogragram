@@ -1,0 +1,8 @@
+@import "../product/product-template.wxss";
+.product-list-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0 15rpx;
+  margin-top: 30rpx;
+}

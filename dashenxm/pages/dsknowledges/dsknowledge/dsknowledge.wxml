@@ -1,0 +1,12 @@
+<import src="../knowledges/knowledges-template.wxml" />
+
+<view>
+  <block wx:for="{{knowledges}}" wx:for-index='kindex' wx:for-item="knowledge" wx:key="index">
+    <view catchtap='ToKnowledgeDetails'data-knowsId="{{knowledge.ARTICLE_ID}}">
+      <template is="knowledgesTemplate" data="{{...knowledge}}"/>
+    </view>
+  </block>
+  <view class="product-b">
+    <text>No more...</text>
+  </view>
+</view>

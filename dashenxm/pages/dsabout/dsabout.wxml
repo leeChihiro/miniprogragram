@@ -1,0 +1,7 @@
+<view class="container">
+  <image class="about-us-img" src="/images/login/userlogin.png"></image>
+  <text class="moto">大神科技，创建于8888年，专业的检测机构\n具有全行业领先的技术与服务</text>
+  <view class="about-us-bottom">
+    <text>V1.98版本\nCopyright @ All Rights Reserved</text>
+  </view>
+</view>

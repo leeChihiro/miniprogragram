@@ -1,0 +1,26 @@
+<template name="testOrder-Complete-Template">
+  <view class="dsorder-complete-bottom">
+    <view class="SegmentingLine"></view>
+    <view class="complete-bottom-t">
+      <image src="/images/order/time.png"></image>
+      <text style="margin-left:20rpx;">下单时间 : {{testOrder4Item.CREATED}}</text>
+      <text style="float:right; margin-right:20rpx;color:#e36e21;">检测完成</text>
+    </view>
+    <view class="complete-bottom-m" bindtap='toDetails' data-jcbddid='{{testOrder4Item.JCBDD_ID}}'>
+      <image src="{{testOrder4Item.IMAGE[0]}}"></image>
+      <view>
+        <text>{{testOrder4Item.TITLE}}</text>
+        <text style="color:#c9c9c9; font-size:30rpx;">数量*1</text>
+      </view>
+    </view>
+    <view class="number">
+      <text>共1项物品合计 : {{testOrder4Item.PRICE}}元</text>
+    </view>
+    <view class="complete-bottom-fg"></view>
+
+    <view class="complete-bottom-b">
+      <view class="complete-bottom-b-btn" bindtap='toReport' data-completedata='{{testOrder4Item}}'>详细</view>
+      <view class="complete-bottom-b-btn">删除</view>
+    </view>
+  </view>
+</template>

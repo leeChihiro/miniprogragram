@@ -1,0 +1,10 @@
+<template name='searchTpl'>
+  <view class='search'>
+    <image src='/images/logo-t.png' mode='aspectFill'></image>
+    <text>吃喝玩乐</text>
+    <view class='ipt-box'>
+      <icon type='search' color='#5f5f5f'></icon>
+      <input type='text' placeholder='请输入商品关键字'></input>
+    </view>
+  </view>
+</template>

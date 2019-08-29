@@ -1,0 +1,11 @@
+<import src="../product/product-template.wxml" />
+<template name="productListTemplate">
+  <view class="product-list-container">
+    <view bindtap='toProductsDetails'>
+      <template is="productTemplate" />
+    </view>
+    <view bindtap='toProductsDetails'>
+      <template is="productTemplate" />
+    </view>
+  </view>
+</template>

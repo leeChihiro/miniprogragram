@@ -1,0 +1,23 @@
+@import "wxParse/wxParse.wxss";
+
+ppage{
+  background-color: #f6f6f6;
+}
+
+image{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+text{
+  font-size: 24rpx;
+  color: #333;
+}
+
+.p-body{
+   padding-top: 40rpx; 
+}
+.panel{
+  margin-bottom: 20rpx;
+  background-color: #fff;
+}

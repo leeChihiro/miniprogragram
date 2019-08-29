@@ -1,0 +1,58 @@
+<!--pages/dsuser/dsuser.wxml-->
+<view class='user'>
+  <view class="user-t"></view>
+  <view class="user-content">
+    <view class="user-top">
+      <image src="{{userInfo.avatarUrl}}"></image>
+      <text>{{userInfo.nickName}}</text>
+      <text>{{userInfo.country}}</text>
+    </view>
+
+    <view class="user-order-1" bindtap='toTestOrders'>
+      <view class="user-order-1-l">
+        <image src="/images/user/order.png"></image>
+        <text>检测表订单</text>
+      </view>
+      <view class="user-order-1-r">
+        <image src='/images/user/more.png'></image>
+      </view>
+    </view>
+    <view style='width:710rpx;border-bottom:1rpx solid #cccccc; margin-left:40rpx;margin-top:20rpx;'></view>
+    
+    <view class="user-order-1" bindtap='toProductOrders'>
+      <view class="user-order-1-l">
+        <image src="/images/user/order.png"></image>
+        <text>商品订单</text>
+      </view>
+      <view class="user-order-1-r">
+        <image src='/images/user/more.png'></image>
+      </view>
+    </view>
+    <view style='width:710rpx;border-bottom:1rpx solid #cccccc; margin-left:40rpx;margin-top:20rpx;'></view>
+
+
+
+    <view class="user-order-2"  bindtap='toQuestion'>
+      <view class="user-order-2-l">
+        <image src="/images/user/content.png"></image>
+        <text>客服电话</text>
+      </view>
+      <view class="user-order-2-r">
+        <image src='/images/user/more.png'></image>
+      </view>
+    </view>
+    <view style='width:710rpx;border-bottom:1rpx solid #cccccc; margin-left:40rpx;margin-top:20rpx;'></view>
+
+    <view class="user-order-3" bindtap='toAbout'>
+      <view class="user-order-3-l">
+        <image src="/images/user/about.png"></image>
+        <text>关于我们</text>
+      </view>
+      <view class="user-order-3-r">
+        <image src='/images/user/more.png'></image>
+      </view>
+    </view>
+    <view style='width:710rpx;border-bottom:1rpx solid #cccccc; margin-left:40rpx;margin-top:20rpx;'></view>
+  </view>
+  <view style='height:100rpx; width:100%;'></view>
+</view>

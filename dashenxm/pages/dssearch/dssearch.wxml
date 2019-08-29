@@ -1,0 +1,61 @@
+<import src="article-template/article-template.wxml" />
+<import src="product-template/product-template.wxml" />
+<import src="test-template/test-template.wxml" />
+
+<view class="search">
+  <view class="search-top">
+    <view class="search-top-l">
+      <input type="text" name="search" placeholder="请输入搜索内容" bindinput="searchInput" bindconfirm="searchAll"></input>
+    </view>
+    <view class="search-top-r" bindtap='searchAll'>
+      <image src='/images/search/search.png'></image>
+    </view>
+  </view>
+  <view class='Search_test'>
+    <view class="search-hot">
+      <view class="search-hot-l">
+        <text></text>
+      </view>
+      <view class="search-hot-r">
+        <text></text>
+      </view>
+    </view>
+    <block wx:for="{{TestData}}" wx:for-item="testItem" wx:key="index">
+      <view  bindtap='ToTestDetails'data-testId = "{{testItem.JCB_ID}}">
+        <template is="test-template" data="{{...testItem}}" />
+      </view>
+    </block>
+  </view>
+
+  <view class='Search_product'>
+    <view class="search-hot">
+      <view class="search-hot-l">
+        <text></text>
+      </view>
+      <view class="search-hot-r">
+        <text></text>
+      </view>
+    </view>
+    <block wx:for="{{ProductData}}" wx:for-item="productItem" wx:key="index">
+      <view bindtap="toProductsDetails" data-DetailsId = "{{productItem.ITEM_ID}}">
+        <template is="product-template" data="{{...productItem}}" />
+      </view>
+    </block>
+  </view>
+
+  <view class='Search_knowledge'>
+    <view class="search-hot">
+      <view class="search-hot-l">
+        <text></text>
+      </view>
+      <view class="search-hot-r">
+        <text></text>
+      </view>
+    </view>
+    <block wx:for="{{ArticleData}}" wx:for-item="ArticleDataItem" wx:key="index">
+      <view catchtap='ToKnowledgeDetails'data-knowsId="{{ArticleDataItem.ARTICLE_ID}}">
+        <template is="article-template" data="{{...ArticleDataItem}}" />
+      </view>
+    </block>
+  </view>
+</view>

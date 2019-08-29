@@ -1,0 +1,23 @@
+<view>
+  <view class='container'>
+    <view class='container-title'>
+      <text>{{DetailsData.TITLE}}</text>
+    </view>
+    <view class="container-img">
+      <image mode='widthFix' src='{{DetailsData.IMAGE[0]}}'></image>
+    </view>
+    <view class="container-details">
+      <text>订单创建时间：{{DetailsData.CREATED}}</text>
+      <text>订单状态：{{DetailsData.STATUS}}</text>
+      <text>收货人：{{DetailsData.SHR}}</text>
+      <text>联系电话：{{DetailsData.PHONE}}</text>
+      <text>收货地址：{{DetailsData.ADDRESS}}</text>
+      <text>类型：{{DetailsData.NORM[0]}}</text>
+      <text>规格：{{DetailsData.NORM[1]}}</text>
+      <text>数量：{{DetailsData.NUM}}</text>
+      <text>价格：{{DetailsData.SUM}}</text>
+      <text>描述：{{DetailsData.TEXT}}</text>
+    </view>
+  </view>
+
+</view>

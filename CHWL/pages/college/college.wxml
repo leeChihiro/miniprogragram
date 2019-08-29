@@ -1,0 +1,57 @@
+<import src='/tpl/nav-tpl/nav-tpl.wxml' />
+<import src='/tpl/search-tpl/search-tpl.wxml' />
+
+<template is='navTpl' />
+<view class='p-body'>
+  <template is='searchTpl' />
+  <view class='rank-heading'>
+    <image src='/images/rank/rank-icon.png'></image>
+    <text>品尝榜</text>
+  </view>
+  <view class='rank-body'>
+    <view class='panel shop-container'>
+      <image src='/images/shop-pic-0.jpg'></image>
+      <view class='shop'>
+        <view class='shop-info'>
+          <image src='/images/shop-portrait-3.jpg'></image>
+          <text>美食不可负</text>
+        </view>
+        <navigator class='jump-btn' url='/pages/home/detail/detail' hover-class='none'>
+          <text>进入</text>
+        </navigator>
+      </view>
+    </view>
+    <view class='panel rank-item'>
+      <image src='/images/rank/pic.jpg'></image>
+      <view class='rank'>
+        <image src='/images/rank/portrait.jpg'></image>
+        <view class='rank-info'>
+          <text class='title'>超级厨房</text>
+          <text class='address'>朝阳区红旗街8192号</text>
+        </view>
+        <view class='map-btn'>
+          <image src='/images/rank/map-icon.png'></image>
+        </view>
+        <view class='tel-btn'>
+          <image src='/images/rank/tel-icon.png'></image>
+        </view>
+      </view>
+    </view>
+    <view class='panel rank-item'>
+      <image src='/images/rank/pic.jpg'></image>
+      <view class='rank'>
+        <image src='/images/rank/portrait.jpg'></image>
+        <view class='rank-info'>
+          <text class='title'>超级厨房</text>
+          <text class='address'>朝阳区红旗街8192号</text>
+        </view>
+        <view class='map-btn'>
+          <image src='/images/rank/map-icon.png'></image>
+        </view>
+        <view class='tel-btn'>
+          <image src='/images/rank/tel-icon.png'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,25 @@
+<template name="productOrder-Complete-Template">
+  <view class="dsorder-complete-bottom">
+    <view class="SegmentingLine"></view>
+    <view class="complete-bottom-t">
+      <image src="/images/order/time.png"></image>
+      <text style="margin-left:20rpx;">下单时间 : {{CREATED}}</text>
+      <text style="float:right; margin-right:20rpx;color:#e36e21;">已完成</text>
+    </view>
+    <view class="complete-bottom-m" bindtap='toProductOrderDetails' data-orderid='{{ORDER_ID}}'>
+      <image src="{{IMAGE[0]}}"></image>
+      <view>
+        <text>{{TITLE}}</text>
+        <text style="color:#c9c9c9; font-size:30rpx;">价格:{{PRICE}}数量:{{NUM}}</text>
+      </view>
+    </view>
+    <view class="number">
+      <text>合计 : {{SUM}}元</text>
+    </view>
+    <view class="complete-bottom-fg"></view>
+    <view class="complete-bottom-b">
+      <view class="complete-bottom-b-btn">详细</view>
+      <view class="complete-bottom-b-btn">删除</view>
+    </view>
+  </view>
+</template>

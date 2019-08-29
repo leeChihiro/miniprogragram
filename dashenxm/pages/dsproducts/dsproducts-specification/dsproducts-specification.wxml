@@ -1,0 +1,91 @@
+<!--pages/dsspecification/dsspecification.wxml-->
+<import src="../product-model-list/product-model-list-template.wxml" />
+<view>
+  <view class="product-top">
+    <view class="product-top-left">
+      <image src='{{Products.IMAGE[0]}}'></image>
+    </view>
+
+    <view class="product-top-right">
+      <view class="product-top-right-top">
+        <text>{{Products.TITLE}}</text>
+      </view>
+      <view class="product-top-right-top-bottom">
+        <text class="product-top-right-top-bottom-1">￥{{Products.PRICE}}</text>
+        <!-- <text class="product-top-right-top-bottom-2">已选</text> -->
+      </view>
+    </view>
+  </view>
+
+  <form bindsubmit="productOrderSubmit">
+    <!-- <view>
+      <radio-group name="norm" bindChange="radioChange">
+        <label wx:for="{{Products.NORM}}" wx:for-item="NORMItem" wx:key="index">
+          <radio value="{{NORMItem.type}},{{NORMItem.norm}},{{NORMItem.money}}" checked="true" />规格：
+          <template is="productModelListTemplate" data="{{...NORMItem}}" />
+        </label>
+      </radio-group>
+    </view> -->
+
+    <!-- <view>
+      <radio-group name="type" bindChange="radioChange" class="TypeRadio">
+        <label wx:for="{{Products.typeArr}}" wx:for-item="typeArrItem" wx:key="index">
+          <radio value="{{typeArrItem}}" checked="true" />{{typeArrItem}}
+        </label>
+      </radio-group>
+    </view> -->
+
+    <!-- <view>
+      <radio-group name="norm" bindChange="radioChange" class="TypeRadio">
+        <label wx:for="{{Products.MoneyArr}}" wx:for-item="MoneyArrItem" wx:key="index">
+          <radio value="{{MoneyArrItem}}" checked="true" />{{MoneyArrItem[0]}}
+        </label>
+      </radio-group>
+    </view> -->
+    <view class="productType">
+      <text class="productTypeText">类型：</text>
+      <view class='TypeRadio'>
+        <block wx:for="{{Products.typeArr}}" wx:for-item="typeArrItem" wx:key="index">
+          <view class="chose-txt" data-typedata="{{typeArrItem}}" data-id="{{index}}" bindtap="choseTxtColor" style="{{index == id?'border:1rpx solid #e8580c; color: #e8580c':'border:1rpx solid gainsboro;color:gray'}}">
+            <text class="chose-p">{{typeArrItem}}</text>
+          </view>
+        </block>
+      </view>
+    </view>
+
+    <view class="productNorm">
+      <text class='productNormText'>规格：</text>
+      <view class='TypeRadio'>
+        <block wx:for="{{Products.MoneyArr}}" wx:for-item="MoneyArrItem" wx:key="index">
+          <view class="chose-txt" data-normdata="{{MoneyArrItem}}" data-moneyid="{{index}}" bindtap="choseTxtColor2" style="{{index == moneyid?' border:1rpx solid #e8580c; color: #e8580c ':'border:1rpx solid gainsboro;color:gray '}}">
+            <text class="chose-p">{{MoneyArrItem[0]}}</text>
+          </view>
+        </block>
+      </view>
+    </view>
+    <!-- <view class="number">
+      <text>购买数量</text>
+      <view class="number-number">
+        <slider min="1" max="10" step='1 ' value='1 ' show-value='true ' block-color="#1aad19" name="sum"></slider>
+      </view>
+    </view>
+    <view style="width:750rpx; height:100rpx;"></view> -->
+
+
+      <view class="Number">
+          <view class='productNumberText'>数量：</view>
+        <view class="stepper">
+          <!-- 减号 -->
+          <text class="{{minusStatus}}" bindtap="bindMinus">-</text>
+          <!-- 数值 -->
+          <input type="number" bindchange="bindManual" value="{{num}}" />
+          <!-- 加号 -->
+          <text class="normal" bindtap="bindPlus">+</text>
+        </view>
+      </view>
+    <view class="specification-bottom" bindtap='ProductPayAddress' data-item_id='{{Products.ITEM_ID}} ' data-price='{{Products.PRICE}} '>
+      <button formType="submit">确定</button>
+    </view>
+
+  </form>
+</view>

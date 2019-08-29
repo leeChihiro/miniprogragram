@@ -1,0 +1,12 @@
+<template name="productPriceTemplate">
+  <view class="productPrice-container">
+    <view class="productPrice-container-text1">
+      <text>￥</text>
+      <text>{{productItem.PRICE}}</text>
+    </view>
+    <view class="productPrice-container-text2">
+      <text>销量</text>
+      <text>{{productItem.NUM}}</text>
+    </view>
+  </view>
+</template>

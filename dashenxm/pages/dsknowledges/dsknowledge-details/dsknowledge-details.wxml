@@ -1,0 +1,19 @@
+<!--pages/dsknowledge-details/dsknowledge-details.wxml-->
+<view>
+  <view class="details">
+    <view class="details-title">
+      <text>{{knowledgeDetails[0].TITLE}}</text>
+    </view>
+
+    <view class="details-img">
+      <block wx:for="{{knowledgeDetails[0].IMAGE}}" wx:for-index='kindex' wx:for-item="IMAGE" wx:key="index">
+        <image mode='widthFix' src="{{IMAGE}}"></image>
+      </block>
+    </view>
+
+    <view class="details-content">
+      <text>{{knowledgeDetails[0].TEXT}}</text>
+    </view>
+
+  </view>
+</view>

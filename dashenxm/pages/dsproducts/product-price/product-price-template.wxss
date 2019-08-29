@@ -1,0 +1,13 @@
+.productPrice-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 30rpx;
+  align-items: center;
+}
+.productPrice-container-text1{
+  color: #fe6665;
+}
+.productPrice-container-text2{
+  color: #1293ee;
+}

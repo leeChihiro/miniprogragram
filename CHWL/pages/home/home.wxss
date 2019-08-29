@@ -1,0 +1,35 @@
+@import '/tpl/nav-tpl/nav-tpl.wxss';
+@import '/tpl/search-tpl/search-tpl.wxss';
+@import '/tpl/tab-tpl/tab-tpl.wxss';
+
+page{
+  background: #f6f6f6
+}
+
+.banner{
+  height: 380rpx;
+}
+
+.nav-container{
+  padding-top: 32rpx;
+  padding-bottom: 8rpx;
+}
+.nav-list{
+  display: flex;
+  margin-bottom: 7rpx;
+}
+.nav-btn{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.nav-btn image{
+  width: 90rpx;
+  height: 90rpx;
+  margin: 0 auto;
+}
+.nav-btn text{
+  padding: 20rpx 0;
+}

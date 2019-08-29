@@ -1,0 +1,20 @@
+<import src='/tpl/nav-tpl/nav-tpl.wxml' />
+<import src='/tpl/tab-tpl/tab-tpl.wxml' />
+<template is='navTpl' data='{{bool: true}}' />
+
+<view class='p-body'>
+  <view class='university-heading'>
+    <text>我的大学</text>
+  </view>
+  <block wx:for="{{AdvertList}}" wx:key="*this">
+    <view class='panel shop-container'>
+      <image src='{{item.PortalImageAllPath}}'></image>
+      <view class='shop'>
+        <view class='shop-info'>
+          <image src='/images/logo-t.png'></image>
+          <text>{{item.Title}}</text>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>

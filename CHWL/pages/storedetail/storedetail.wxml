@@ -1,0 +1,41 @@
+<import src="../../wxParse/wxParse.wxml" />
+
+<import src='/tpl/nav-tpl/nav-tpl.wxml' />
+<template is='navTpl' data='{{bool: true}}' />
+
+<view class='p-body'>
+  <image src="{{StoreDetail._LogoAllURL}}" mode='aspectFill'></image>
+  <view class='panel'>
+    <view class='panel-heading'>
+      <text>{{StoreDetail.StoreName}}</text>
+    </view>
+    <view class='panel-body'>
+      <view class='bar-item' catchtap="onMapTap" data-storeid="{{StoreDetail.StoreID}}">
+        <text>{{StoreDetail.Address}}</text>
+        <image src='/images/rank/map-icon.png'></image>
+      </view>
+      <view class='bar-item' catchtap="onPhone" data-storeid="{{StoreDetail.PhoneNumber}}">
+        <text>联系电话：{{StoreDetail.PhoneNumber}}</text>
+        <image src='/images/rank/tel-icon.png'></image>
+      </view>
+    </view>
+  </view>
+  <view class='panel detail-info'>
+    <view class='title'>
+      <text>商家信息</text>
+    </view>
+    <view class='desc'>
+      <template is="wxParse" data="{{wxParseData:storedata_Introduction.nodes}}" />
+    </view>
+  </view>
+</view>
+<view class='p-footer'>
+  <block wx:for="{{CouponList}}" wx:for-item="item" wx:for-index="index" wx:key="*this">
+    <view class='coupon-item'>
+      <text class='title'>{{item.Title}}(剩:{{item.ReceiveCount}}张)</text>
+      <view class='coupon-btn' catchtap="onCouponTap" data-couponid="{{item.CouponID}}">
+        <text>下载</text>
+      </view>
+    </view>
+  </block>
+</view>

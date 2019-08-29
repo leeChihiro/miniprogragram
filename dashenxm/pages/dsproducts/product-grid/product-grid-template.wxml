@@ -1,0 +1,8 @@
+<import src="../product/product-template.wxml" />
+<template name="productGridTemplate">
+  <block wx:for="{{product}}" wx:for-item="productItem" wx:key="index">
+    <view class='single-product-container' bindtap="toProductsDetails" data-DetailsId = "{{productItem.ITEM_ID}}">
+      <template is="productTemplate" data="{{productItem}}" />
+    </view>
+  </block>
+</template>

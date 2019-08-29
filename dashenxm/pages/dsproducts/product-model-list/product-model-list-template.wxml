@@ -1,0 +1,18 @@
+<template name="productModelListTemplate">
+  <view class="product-model-list-container">
+    <view class="product-model-list">
+      <view class="product-model-list-subject">
+        <view class="product-model-container">
+          <text>型号：{{type}}</text>
+        </view>
+        <view class="product-model-container">
+          <text>尺寸：{{norm}}</text>
+        </view>
+        <view class="product-model-container">
+          <text>￥{{money}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="product-model-list-line" />
+  </view>
+</template>

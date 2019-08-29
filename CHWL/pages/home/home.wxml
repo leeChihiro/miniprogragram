@@ -1,0 +1,118 @@
+<import src='/tpl/tab-tpl/tab-tpl.wxml' />
+<import src='/tpl/search-tpl/search-tpl.wxml' />
+
+<loading hidden="{{hide}}">加载中...</loading>
+
+<view class='p-heading'></view>
+<view class='p-body'>
+  <template is='searchTpl' />
+
+  <swiper vertical='{{false}}' class='banner' autoplay='true' indicator-dots='true' interval='5000'>
+    <block wx:for="{{Advertlist}}" wx:key="*this">
+      <swiper-item>
+        <image src='{{item.PortalImageAllPath}}'></image>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class='panel nav-container'>
+    <view class='nav-list'>
+      <block wx:for="{{classifyList}}" wx:key="*this">
+        <view class='nav-btn' catchtap="onclassifylistTap" data-id="{{item.ID}}">
+          <image src='{{item._ImageURL}}'></image>
+          <text>{{item.Name}}</text>
+        </view>
+      </block>
+    </view>
+
+    <view class='nav-list'>
+      <block wx:for="{{classifyList2}}" wx:key="*this">
+        <view class='nav-btn' catchtap="onclassifylistTap" data-id="{{item.ID}}">
+          <image src='{{item._ImageURL}}'></image>
+          <text>{{item.Name}}</text>
+        </view>
+      </block>
+    </view>
+
+    <!-- <view class='nav-list'>
+      <navigator class='nav-btn' open-type='switchTab' url='/pages/rank/rank' hover-class='none'>
+        <image src='/images/icon/rank-btn.png'></image>
+        <text>品尝榜</text>
+      </navigator>
+
+      <navigator class='nav-btn' open-type='switchTab' url='/pages/university/university' hover-class='none'>
+        <image src='/images/icon/college-btn.png'></image>
+        <text>我的大学</text>
+      </navigator>
+
+      <navigator class='nav-btn' open-type='switchTab' url='/pages/mybaby/mybaby' hover-class='none'>
+        <image src='/images/icon/baby-btn.png'></image>
+        <text>我爱宝贝</text>
+      </navigator>
+      <view class='nav-btn'>
+        <image src='/images/icon/server-btn.png'></image>
+        <text>生活服务</text>
+      </view>
+    </view>
+    <view class='nav-list'>
+      <navigator class='nav-btn' open-type='switchTab' url='/pages/user/user' hover-class='none'>
+        <image src='/images/icon/coupon-btn.png'></image>
+        <text>优惠券</text>
+      </navigator>
+      <view class='nav-btn'>
+        <image src='/images/icon/train-btn.png'></image>
+        <text>学习培训</text>
+      </view>
+      <view class='nav-btn'>
+        <image src='/images/icon/pet-btn.png'></image>
+        <text>爱宠之家</text>
+      </view>
+      <view class='nav-btn'>
+        <image src='/images/icon/vote-btn.png'></image>
+        <text>投票</text>
+      </view>
+    </view> -->
+  </view>
+</view>
+
+<block wx:for="{{NewList}}" wx:key="*this">
+  <view class='panel' catchtap="onNewlistTap" data-index="{{index}}">
+    <view class='tab-con'>
+      <view class='con-item'>
+        <text class='tag-info'>今日推荐</text>
+        <image class='tag-bg' src='/images/tag-bg-1.png'></image>
+        <image src="{{item._LogoAllURL}}"></image>
+      </view>
+    </view>
+    <view class='shop-info'>
+      <view class='portrait-name'>
+        <image src='/images/logo-t.png'></image>
+        <text>{{item.StoreName}}</text>
+      </view>
+      <view class='shop-btn'>
+        <text>进入店铺</text>
+      </view>
+    </view>
+  </view>
+</block>
+
+<block wx:for="{{list}}" wx:key="*this">
+  <view class='panel' catchtap="onlistTap" data-index="{{index}}">
+    <view class='tab-con'>
+      <view class='con-item'>
+        <text class='tag-info'>上榜Top3</text>
+        <image class='tag-bg' src='/images/tag-bg-2.png'></image>
+        <image src="{{item._LogoAllURL}}"></image>
+      </view>
+    </view>
+    <view class='shop-info'>
+      <view class='portrait-name'>
+        <image src='/images/logo-t.png'></image>
+        <text>{{item.StoreName}}</text>
+      </view>
+      <view class='shop-btn'>
+        <text>进入店铺</text>
+      </view>
+    </view>
+  </view>
+</block>

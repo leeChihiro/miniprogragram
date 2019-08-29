@@ -1,0 +1,64 @@
+@import '/tpl/nav-tpl/nav-tpl.wxss';
+@import '/tpl/search-tpl/search-tpl.wxss';
+
+
+page{
+  background: #ffa4a4
+}
+
+.rank-heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100rpx;
+  margin-top: 10rpx;
+}
+.rank-heading image{
+  width: 97rpx;
+  height: 68rpx;
+}
+.rank-heading text{
+  font-size: 36rpx;
+  color: #fff;
+}
+
+.rank-body{
+  padding: 0 20rpx;
+}
+.rank-item{
+  padding: 20rpx;
+}
+.rank-item image{
+  width: 670rpx;
+  height: 340rpx;
+}
+.rank{
+  display: flex;
+  align-items: center;
+  padding-top: 25rpx;
+  padding-bottom: 4rpx;
+}
+.rank image{
+  width: 70rpx;
+  height: 70rpx;
+}
+.rank-info{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-left: 15rpx;
+}
+.rank-info .title{
+  margin-bottom: 6rpx;
+  font-size: 30rpx;
+}
+.rank-info .address{
+  font-size: 22rpx;
+  color: #999;
+  line-height: 24rpx;
+}
+.map-btn image,.tel-btn image{
+  width: 56rpx;
+  height: 56rpx;
+  margin: 0 10rpx 0 20rpx;
+}

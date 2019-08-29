@@ -1,0 +1,129 @@
+.ui-bar-nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: #fff;
+  z-index: 111;
+  padding: 10px;
+}
+
+.ui-bar-title {
+  line-height: 50px;
+  font-size: 18px;
+  color: #fff;
+  position: absolute;
+  left: 50px;
+  right: 50px;
+  top: 0;
+  text-align: center;
+}
+
+.ui-bar-title img {
+  height: 35px;
+}
+
+.ui-content{
+	padding-top: 50px;
+	-webkit-overflow-scrolling: touch;
+  outline: 0;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.shop-box {
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  margin: 20px 15px;
+  text-align: center;
+  background: #fff;
+  padding: 35px;
+}
+
+.shop-icon{
+	margin-bottom: 5px;
+}
+.shop-in-box{
+	position: relative;
+	z-index: 11;
+}
+.shop-icon img{
+	width: 80px;
+	height: 80px;
+	border-radius: 6px;
+}
+
+.shop-tit{
+	padding: 10px 0;
+	font-size: 18px;
+}
+.shop-meta{
+	font-size: 10px;
+	color: #666666;
+}
+
+.shop-ads{
+	display: inline-block;
+	padding-left: 13px;
+	line-height: 20px;	
+	background-size: 9px 11px;
+	margin-bottom: 5px;
+}
+
+.shop-tips{
+	font-size: 10px;
+	line-height: 20px;
+	color: #ff2121;
+}
+
+.shop-button{
+	text-align: center;
+}
+.shop-button .btn-back{
+	display: inline-block;
+	color: #FFFFFF;
+	font-size: 16px;
+	background: #797979;
+	width: 200px;
+	height: 45px;
+	line-height: 45px;
+	border-radius: 5px;
+}
+
+.modal-backdrop{
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: rgba(0,0,0,.4);
+	z-index: 210;
+}
+.modal-box{
+	width: 280px;
+	border-radius: 10px;
+	text-align: center;
+	background: #FFFFFF;
+	border-radius: 10px;
+	z-index: 1111;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	
+}
+.modal-body{
+	padding: 40px 10px;
+}
+.modal-tips{
+	color: #666666;
+	font-size: 18px;
+}
+.modal-tips img{
+	width: 22px;
+	vertical-align: middle;
+	margin-top: -3px;
+}

@@ -1,0 +1,62 @@
+<!--pages/dstest-address/dstest-address.wxml-->
+<view>
+  <form bindsubmit="formSubmit" >
+    <view class='dstest-address-top'>
+
+      <view class="dstest-address-details">
+
+        <view>
+          <view class="dstest-address-details-1">
+            <view class="dstest-address-details-1-text">
+              <text>收件人 ：</text>
+            </view>
+            <view class="dstest-address-details-1-input">
+              <input type="text" name="username" placeholder="请输入姓名" />
+            </view>
+          </view>
+          <view class="dstest-address-details-1-fg"></view>
+        </view>
+
+        <view>
+          <view class="dstest-address-details-2">
+            <view class="dstest-address-details-2-text">
+              <text>电话 ：</text>
+            </view>
+            <view class="dstest-address-details-2-input">
+              <input type="number" name="mobil" placeholder="只要能联系到您即可"/>
+            </view>
+          </view>
+          <view class="dstest-address-details-2-fg"></view>
+        </view>
+
+        <view>
+          <view class="dstest-address-details-3">
+            <view>
+              <text class="dstest-address-details-3-text">收货地址 ：</text>
+            </view>
+            <view class="dstest-address-details-3-input">
+              <input type="text" name="address" placeholder="填写正确详细地址" />
+            </view>
+          </view>
+          <view class="dstest-address-details-3-fg"></view>
+        </view>
+
+      </view>
+
+
+      <view class="dstest-address-Tips">
+        <text>提示：</text>
+        <text>只要能联系到您即可,我们将选择专门的隐私包裹方式</text>
+      </view>
+
+      <view class="dstest-address-images">
+        <image src="/images/test/testaddress.png"></image>
+      </view>
+
+    </view>
+    <view class="dstest-address-fg"></view>
+    <view class='dstest-address-bottom'>
+      <button formType="submit">共需支付￥{{showsum}}元</button>
+    </view>
+  </form>
+</view>

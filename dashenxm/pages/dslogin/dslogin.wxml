@@ -1,0 +1,15 @@
+<view class="container">
+  <image class="user-avatar" src="/images/login/userlogin.png"></image>
+  <view class="moto-container">
+    <view class="UserInformation1">
+      <view class='UserInfoHead'>
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <view class='UserInfoText'>
+        <open-data type="userNickName"></open-data>
+      </view>
+    </view>
+
+    <button open-type="getUserInfo" class="loginBtn" bindtap='toHome'>登录</button>
+  </view>
+</view>

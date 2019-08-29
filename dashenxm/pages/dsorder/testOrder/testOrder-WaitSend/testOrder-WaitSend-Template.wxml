@@ -1,0 +1,25 @@
+<template name="testOrder-WaitSend-Template">
+  <view class="dsorder-sample-bottom">
+  <view class="SegmentingLine"></view>
+    <view class="sample-bottom-t">
+      <image src="/images/order/time.png"></image>
+      <text style="margin-left:20rpx;">下单时间 : {{testOrder2Item.CREATED}}</text>
+      <text style="float:right; margin-right:20rpx;color:#e36e21;">已发送工具</text>
+    </view>
+    <view class="sample-bottom-m" bindtap='toDetails' data-jcbddid='{{testOrder2Item.JCBDD_ID}}'>
+      <image src="{{testOrder2Item.IMAGE[0]}}"></image>
+      <view>
+        <text>{{testOrder2Item.TITLE}}</text>
+        <text style="color:#c9c9c9; font-size:30rpx;">数量*1</text>
+      </view>
+    </view>
+    <view class="number">
+      <text>共1项物品合计 : {{testOrder2Item.PRICE}}元</text>
+    </view>
+    <view class="sample-bottom-fg"></view>
+    <view class="sample-bottom-b">
+      <!-- <view class="sample-bottom-b-btn">确认发送</view> -->
+      <text>等候接收样本，并化验，请耐心等候</text>
+    </view>
+  </view>
+</template>

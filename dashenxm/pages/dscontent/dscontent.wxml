@@ -1,0 +1,52 @@
+<!--pages/dscontent/dscontent.wxml-->
+<view class="content">
+  <view class="content-banner">
+    <image src='/images/content/img.png'></image>
+    <view>
+      <text>Hi,有什么能帮您的呢?</text>
+    </view>
+  </view>
+
+  <view class="content-question">
+    <view class="content-question-t">
+      <view class="content-question-t-l" bindtap='toQuestionDetails' data-title="{{fixedQusetionData[0].TEXT}}" data-text='{{fixedQusetionData[0].DA}}'>
+        <image src='/images/content/sf.png'></image>
+        <text>{{fixedQusetionData[0].TEXT}}</text>
+      </view>
+      <view class="content-question-t-fg"></view>
+      <view class="content-question-t-r" bindtap='toQuestionDetails' data-title="{{fixedQusetionData[1].TEXT}}" data-text='{{fixedQusetionData[1].DA}}'>
+        <image src='/images/content/wechat.png'></image>
+        <text>{{fixedQusetionData[1].TEXT}}</text>
+      </view>
+    </view>
+    <view class="content-question-fg"></view>
+    <view class="content-question-b">
+      <view class="content-question-b-l" bindtap='toQuestionDetails' data-title="{{fixedQusetionData[2].TEXT}}" data-text='{{fixedQusetionData[2].DA}}'>
+        <image src="/images/content/report.png"></image>
+        <text>{{fixedQusetionData[2].TEXT}}</text>
+      </view>
+      <view class="content-question-b-fg"></view>
+      <view class="content-question-b-r" bindtap='toQuestionDetails' data-title="{{fixedQusetionData[3].TEXT}}" data-text='{{fixedQusetionData[3].DA}}'>
+        <image src="/images/content/security.png"></image>
+        <text>{{fixedQusetionData[3].TEXT}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="content-otherquestion">
+    <view class="content-otherquestion1">
+      <text>其他常见问题</text>
+      <view></view>
+    </view>
+    <block wx:for="{{QusetionData}}" wx:for-item="QusetionDataItem" wx:key="index">
+      <view class="content-otherquestion2" bindtap='toQuestionDetails' data-title="{{QusetionDataItem.TEXT}}" data-text='{{QusetionDataItem.DA}}'>
+        <text>{{QusetionDataItem.TEXT}}</text>
+        <view></view>
+      </view>
+    </block>
+  </view>
+
+  <view class="content-online-btn">
+    <button open-type='contact'>在线咨询</button>
+  </view>
+</view>

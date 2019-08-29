@@ -1,0 +1,11 @@
+<template name="knowledgesTemplate">
+  <view class="knowledges-template-container">
+    <view class="knowledges-template-subject" data-knowsId='{{ARTICLE_ID}}'>
+      <text>{{TITLE}}</text>
+      <view class="knowledges-template-img">
+        <image mode='widthFix' src='{{image[0]}}'></image>
+      </view>
+    </view>
+    <view class="knowledges-template-line" />
+  </view>
+</template>

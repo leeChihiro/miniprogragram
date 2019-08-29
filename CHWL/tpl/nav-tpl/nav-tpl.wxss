@@ -1,0 +1,39 @@
+.p-heading{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 40rpx;
+  background-color: #fff;
+  z-index: 9999;
+}
+
+.nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 88rpx;
+}
+.nav .back-btn{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 30rpx;
+  height: 88rpx;
+  padding: 10rpx;
+  box-sizing: border-box;
+}
+.nav .back-btn image{
+  width: 20rpx;
+  height: 34rpx;
+}
+.nav image{
+  width: 76rpx;
+  height: 70rpx;
+  margin: 0 6rpx;
+}
+.nav text{
+  font-size: 32rpx;
+  color: #000;
+}

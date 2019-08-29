@@ -1,0 +1,156 @@
+/* pages/dshot/dshot.wxss */
+
+.hot-top {
+  width: 750rpx;
+  height: 400rpx;
+  position: relative;
+}
+
+.hot-top-img image {
+  width: 750rpx;
+  height: 400rpx;
+}
+
+.hot-top-content {
+  position: absolute;
+  left: 50%;
+  margin-left: -120rpx;
+  top: 10rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hot-top-content image {
+  width: 100rpx;
+  height: 100rpx;
+  margin-top: 20rpx;
+}
+
+.hot-top-content text {
+  color: #fff;
+  font-weight: bold;
+  margin-top: 20rpx;
+  font-size: 34rpx;
+}
+
+.hot-top-content view {
+  width: 250rpx;
+  height: 50rpx;
+  background: #fff;
+  border-radius: 5px;
+  opacity: 0.6;
+  color: #666;
+  text-align: center;
+  line-height: 50rpx;
+  margin-top: 20rpx;
+  font-size: 30rpx;
+}
+
+.hot-bottom {
+  width: 700rpx;
+  border: 1rpx solid #fff;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px #888;
+  position: absolute;
+  top: 300rpx;
+  left: 50%;
+  margin-left: -350rpx;
+  margin-bottom: 50rpx;
+}
+
+.hot-banner {
+  position: relative;
+  margin-bottom: 0;
+}
+
+.hot-banner image {
+  width: 700rpx;
+  height: 400rpx;
+}
+
+.hot-banner text {
+  margin-left: 20rpx;
+  position: relative;
+  top: -80rpx;
+  color: #fff;
+}
+
+.hot-container-text {
+  margin-left: 20rpx;
+}
+
+.hot-container-text1 {
+  width: 700rpx;
+  height: 150rpx;
+  margin-bottom: 20rpx;
+}
+
+.hot-container-text1 image {
+  width: 120rpx;
+  height: 120rpx;
+  vertical-align: middle;
+}
+
+.hot-container-text1 text {
+  margin-left: 20rpx;
+  color: #333;
+  font-size: 34rpx;
+}
+
+.hot-container-text1 view {
+  width: 500rpx;
+  border-bottom: 1rpx solid #ccc;
+  margin-top: 20rpx;
+  margin-left: 140rpx;
+}
+
+.hot-container-text2 {
+  width: 700rpx;
+  height: 150rpx;
+  margin-bottom: 20rpx;
+}
+
+.hot-container-text2 image {
+  width: 120rpx;
+  height: 120rpx;
+  vertical-align: middle;
+}
+
+.hot-container-text2 text {
+  margin-left: 20rpx;
+  color: #333;
+  font-size: 34rpx;
+}
+
+.hot-container-text2 view {
+  width: 500rpx;
+  border-bottom: 1rpx solid #ccc;
+  margin-top: 20rpx;
+  margin-left: 140rpx;
+}
+
+.hot-container-text3 {
+  width: 700rpx;
+  height: 150rpx;
+  margin-bottom: 20rpx;
+}
+
+.hot-container-text3 image {
+  width: 120rpx;
+  height: 120rpx;
+  vertical-align: middle;
+}
+
+.hot-container-text3 text {
+  margin-left: 20rpx;
+  color: #333;
+  font-size: 34rpx;
+}
+
+.hot-container-text3 view {
+  width: 500rpx;
+  border-bottom: 1rpx solid #ccc;
+  margin-top: 20rpx;
+  margin-left: 140rpx;
+}

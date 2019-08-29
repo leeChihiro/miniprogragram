@@ -1,0 +1,16 @@
+/* pages/dsknowledge/dsknowledge.wxss */
+@import "../knowledges/knowledges-template.wxss";
+.knowledge-bottom{
+  width: 750rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  color: #666666;
+}
+.product-b{
+  width: 750rpx;
+  height: 100rpx;
+  color: #666666;
+  line-height: 100rpx;
+  text-align: center;
+}

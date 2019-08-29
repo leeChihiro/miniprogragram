@@ -1,0 +1,73 @@
+.coupon-container{
+  position: relative;
+  width: 722rpx;
+  margin: 0 auto;
+  margin-bottom: 8rpx;
+}
+.coupon-container .bg{
+  height: 252rpx;
+}
+.coupon-heading{
+  display: flex;
+  position: absolute;
+  top: 4rpx;
+  width: 100%;
+  height: 163rpx;
+  padding: 20rpx 26rpx;
+  box-sizing: border-box;
+}
+.coupon-heading image{
+  width: 160rpx;
+  height: 123rpx;
+}
+.coupon-info{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-left: 15rpx;
+}
+.coupon-info .title{
+  font-size: 30rpx;
+  line-height: 48rpx;
+}
+.coupon-info .time{
+  font-size: 18rpx;
+  color: #666;
+  line-height: 42rpx;
+}
+.coupon-heading .coupon-status{
+  padding: 0 20rpx;
+  font-size: 24rpx;
+  color: #ff2121;
+  text-align: center;
+  line-height: 48rpx;
+}
+.coupon-body{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 167rpx;
+  width: 100%;
+  height: 77rpx;
+  padding: 0 34rpx;
+  box-sizing: border-box;
+}
+.coupon-body .rule{
+  font-size: 22rpx;
+  color: #666;
+}
+.coupon-body .btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100rpx;
+  height: 40rpx;
+  margin: 0 6rpx;
+  border-radius: 20rpx;
+  background-color: #c2c2c2;
+}
+.coupon-body .btn text{
+  font-size: 24rpx;
+  color: #fff;
+}

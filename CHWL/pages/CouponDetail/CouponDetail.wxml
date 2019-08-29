@@ -1,0 +1,37 @@
+<view>
+  <view class='ui-bar-nav'>
+    <view class="ui-bar-title">
+       <image src='/images/logo.png' ></image>
+    </view>
+  </view>
+
+  <view class="ui-content">
+    <view class="shop-box">
+      <view class="shop-in-box">
+        <view class="shop-icon">
+          <image src="{{MyCoupon._LogoAllURL}}" ></image>
+        </view>
+        <view class="shop-tit">{{MyCoupon.StoreName}}</view>
+        <view class="shop-meta">
+          <span class="shop-ads">
+            <img src='/images/loaction.png' />{{MyCoupon.Address}}
+          </span>
+        </view>
+        <view class="shop-tips">{{retVal}}</view>
+      </view>
+    </view>
+    <view class="shop-button" bindtap="onTap">
+      <text class="btn btn-back">{{motto}}</text>
+    </view>
+  </view>
+
+  <view class="modal-box">
+    <view class="modal-body">
+      <view class="modal-tips">
+        <image src='/images/tips.png' ></image>{{retVal}}
+      </view>
+    </view>
+  </view>
+  <view class="modal-backdrop"></view>
+
+</view>

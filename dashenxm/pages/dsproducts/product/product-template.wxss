@@ -1,0 +1,14 @@
+@import "../product-price/product-price-template.wxss";
+
+.product-container {
+  display: flex;
+  flex-direction: column;
+  width: 330rpx;
+}
+.product-img {
+  width: 330rpx;
+  height: 330rpx;
+}
+.product-title{
+  color:#666666;
+}

@@ -1,0 +1,8 @@
+<import src="../product-price/product-price-template.wxml" />
+<template name="productTemplate">
+  <view class="product-container">
+    <image class="product-img" src='{{productItem.IMAGE[0]}}'></image>
+    <text class="product-title">{{productItem.TITLE}}</text>
+    <template is="productPriceTemplate" data="{{productItem}}"/>
+  </view>
+</template>

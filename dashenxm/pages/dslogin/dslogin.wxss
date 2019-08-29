@@ -1,0 +1,80 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-avatar {
+  width: 461rpx;
+  height: 143rpx;
+  margin-top: 150rpx;
+}
+
+.user-name {
+  margin-top: 350rpx;
+  margin-bottom: 25rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #c0c0c0;
+}
+
+.user-avater2 {
+  width: 306rpx;
+  height: 100rpx;
+}
+
+page {
+  height: 100%;
+  background-color: #fff;
+}
+
+.UserInformation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150rpx;
+}
+
+.UserInformation text {
+  font-size: 30rpx;
+}
+
+.portrait {
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.portrait image {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50px;
+}
+
+/* 用户头像及名称 */
+
+.UserInformation1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 130rpx;
+}
+
+.UserInfoHead {
+  overflow: hidden;
+  display: block;
+  width: 250rpx;
+  height: 250rpx;
+  margin-bottom: 20rpx;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+.UserInfoText{
+  margin-bottom: 170rpx;
+  font-size: 16px;
+}
+.loginBtn {
+  border-radius: 25px;
+  font-size: 34rpx;
+  width: 350rpx;
+}

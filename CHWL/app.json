@@ -1,0 +1,56 @@
+{
+  "pages": [   
+   
+    "pages/welcome/welcome",
+    "pages/home/home",
+    "pages/rank/rank",
+    "pages/user/user",
+    "pages/college/college",
+    "pages/storedetail/storedetail",
+    "pages/university/university",
+    "pages/mybaby/mybaby",
+    "pages/CouponDetail/CouponDetail"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "position": "bottom",
+    "color": "#999999",
+    "selectedColor": "#ff2121",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "images/icon/home-icon.png",
+        "selectedIconPath": "images/icon/home.png"
+      },
+      {
+        "pagePath": "pages/rank/rank",
+        "text": "品尝榜",
+        "iconPath": "images/icon/rank-icon.png",
+        "selectedIconPath": "images/icon/rank.png"
+      },
+      {
+        "pagePath": "pages/university/university",
+        "text": "我的大学",
+        "iconPath": "images/icon/college.png",
+        "selectedIconPath": "images/icon/college-icon.png"
+      },
+      {
+        "pagePath": "pages/mybaby/mybaby",
+        "text": "我爱宝贝",
+        "iconPath": "images/icon/pet.png",
+        "selectedIconPath": "images/icon/pet-icon.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "images/icon/user-icon.png",
+        "selectedIconPath": "images/icon/user.png"
+      }
+    ]
+  }
+}

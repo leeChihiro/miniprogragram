@@ -1,0 +1,86 @@
+<import src='/tpl/search-tpl/search-tpl.wxml' />
+<import src='/tpl/coupon-tpl/coupon-tpl.wxml' />
+
+<view class='p-heading'></view>
+<view class='p-body'>
+  <template is='searchTpl' />
+  <view class='tab-nav' bindtap='onTabSwitch'>
+    <block wx:for='{{tabObj}}' wx:for-index='k' wx:for-item='v' wx:key='unique'>
+      <view class='nav-item {{curIndex==k? "on":""}}' data-id='{{k}}' data-tab-id='{{v.tabId}}'>{{v.name}}</view>
+    </block>
+  </view>
+  <scroll-view class='tab-con' scroll-x='true' scroll-with-animation='true' scroll-into-view='{{toView}}' bindscroll='onConSwitch'>
+    <view class='tab-item' id='wsy'>
+      <block wx:for='{{notusedCouponList}}' wx:for-index='key' wx:for-item='val' wx:key='unique'>
+        <view class='coupon-container'>
+          <view class='coupon-heading'>
+            <image src='{{val._LogoAllURL}}'></image>
+            <view class='coupon-info'>
+              <text class='title'>{{val.StoreName}}</text>
+              <text class='time'>有效日期至：{{val.ExpriteTime}}</text>
+            </view>
+            <text class='coupon-status'>未使用</text>
+          </view>
+          <view class='coupon-body'>
+            <text class='rule'>{{val.CouponName}}</text>
+          </view>
+          <image class='bg' src='/images/coupon/coupon-bg.png'></image>
+        </view>
+      </block>
+    </view>
+    <view class='tab-item' id='ysy'>
+      <block wx:for='{{usedCouponList}}' wx:for-index='key' wx:for-item='val' wx:key='unique'>
+        <view class='coupon-container'>
+          <view class='coupon-heading'>
+            <image src='{{val._LogoAllURL}}'></image>
+            <view class='coupon-info'>
+              <text class='title'>{{val.StoreName}}</text>
+              <text class='time'>有效日期至：{{val.ExpriteTime}}</text>
+            </view>
+            <text class='coupon-status'>已使用</text>
+          </view>
+          <view class='coupon-body'>
+            <text class='rule'>{{val.CouponName}}</text>
+          </view>
+          <image class='bg' src='/images/coupon/coupon-bg.png'></image>
+        </view>
+      </block>
+    </view>
+    <view class='tab-item' id='ygq'>
+      <block wx:for='{{expireCouponlist}}' wx:for-index='key' wx:for-item='val' wx:key='unique'>
+        <view class='coupon-container'>
+          <view class='coupon-heading'>
+            <image src='{{val._LogoAllURL}}'></image>
+            <view class='coupon-info'>
+              <text class='title'>{{val.StoreName}}</text>
+              <text class='time'>有效日期至：{{val.ExpriteTimeJson}}</text>
+            </view>
+            <text class='coupon-status'>已过期</text>
+          </view>
+          <view class='coupon-body'>
+            <text class='rule'>{{val.CouponName}}</text>
+          </view>
+          <image class='bg' src='/images/coupon/coupon-bg.png'></image>
+        </view>
+      </block>
+    </view>
+    <view class='tab-item' id='yfq'>
+      <block wx:for='{{giveupCouponlist}}' wx:for-index='key' wx:for-item='val' wx:key='unique'>
+        <view class='coupon-container'>
+          <view class='coupon-heading'>
+            <image src='{{val._LogoAllURL}}'></image>
+            <view class='coupon-info'>
+              <text class='title'>{{val.StoreName}}</text>
+              <text class='time'>有效日期至：2018-04-25</text>
+            </view>
+            <text class='coupon-status'>已放弃</text>
+          </view>
+          <view class='coupon-body'>
+            <text class='rule'>{{val.CouponName}}</text>
+          </view>
+          <image class='bg' src='/images/coupon/coupon-bg.png'></image>
+        </view>
+      </block>
+    </view>
+  </scroll-view>
+</view>

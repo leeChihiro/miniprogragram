@@ -1,0 +1,7 @@
+@import "../product/product-template.wxss";
+
+.single-product-container {
+  float: left;
+  margin-left: 30rpx;
+  margin-bottom: 30rpx;
+}

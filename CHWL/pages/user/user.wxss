@@ -1,0 +1,42 @@
+@import '/tpl/nav-tpl/nav-tpl.wxss';
+@import '/tpl/search-tpl/search-tpl.wxss';
+@import '/tpl/coupon-tpl/coupon-tpl.wxss';
+
+page{
+  background: #f6f6f6
+}
+
+.tab-nav{
+  display: flex;
+  margin-bottom: 20rpx;
+  border-bottom: 2rpx solid #eee;
+  background-color: #fff;
+}
+.nav-item{
+  flex: 1;
+  font-size: 28rpx;
+  color: #666;
+  line-height: 80rpx;
+  text-align: center;
+}
+.nav-item.on{
+  position: relative;
+  color: #ff2121;
+}
+.nav-item.on::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 6rpx;
+  background-color: #ff2121;
+}
+
+.tab-con{
+  white-space: nowrap;
+}
+.tab-item{
+  display: inline-block;
+  width: 750rpx;
+}

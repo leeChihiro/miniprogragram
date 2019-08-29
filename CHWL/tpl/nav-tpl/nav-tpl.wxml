@@ -1,0 +1,11 @@
+<template name='navTpl'>
+  <view class='p-heading'>
+    <view class='nav' wx:if='{{bool}}'>
+      <navigator class='back-btn' open-type='navigateBack' hover-class='none'>
+        <image src='/images/icon/back-icon.png'></image>
+      </navigator>
+      <image src='/images/logo-t.png' mode='aspectFill'></image>
+      <text>吃喝玩乐</text>
+    </view>
+  </view>
+</template>

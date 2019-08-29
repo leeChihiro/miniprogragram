@@ -1,0 +1,106 @@
+/* pages/dstest-address/dstest-address.wxss */
+
+.dstest-address-details {
+  padding: 20rpx;
+}
+
+.dstest-address-details-1 {
+  display: flex;
+  flex-direction: row;
+  height: 70rpx;
+  line-height: 70rpx;
+}
+
+.dstest-address-details-1-input  input {
+  color: #666;
+  font-size: 28rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+}
+
+.dstest-address-details-1-fg {
+  width: 730rpx;
+  border-bottom: 1px solid #ccc;
+  margin-top: 20rpx;
+}
+
+.dstest-address-details-2 {
+  display: flex;
+  flex-direction: row;
+  height: 70rpx;
+  line-height: 70rpx;
+}
+
+.dstest-address-details-2-input  input {
+  color: #666;
+  font-size: 28rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+}
+
+.dstest-address-details-2-fg {
+  width: 730rpx;
+  border-bottom: 1px solid #ccc;
+  margin-top: 20rpx;
+}
+
+.dstest-address-details-3 {
+  display: flex;
+  flex-direction: row;
+  height: 70rpx;
+  line-height: 70rpx;
+}
+
+.dstest-address-details-3-input  input {
+  color: #666;
+  font-size: 28rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+}
+
+.dstest-address-details-3-fg {
+  width: 730rpx;
+  border-bottom: 1px solid #ccc;
+  margin-top: 20rpx;
+}
+
+.dstest-address-Tips {
+  display: flex;
+  flex-direction: column;
+  color: #ff8e8b;
+  font-size: 28rpx;
+  padding-left: 20rpx;
+  margin-top: 40rpx;
+}
+
+.dstest-address-images {
+  width: 750rpx;
+}
+
+.dstest-address-images image {
+  display: block;
+  width: 380rpx;
+  height: 350rpx;
+  margin: 150rpx auto;
+}
+
+.dstest-address-fg {
+  width: 750rpx;
+  height: 100rpx;
+}
+
+.dstest-address-bottom {
+  width: 750rpx;
+  padding-left: 25rpx;
+}
+
+.dstest-address-bottom button {
+  background: #22ad38;
+  width: 700rpx;
+  height: 100rpx;
+  position: fixed;
+  bottom: 25rpx;
+  color: #fff;
+  line-height: 100rpx;
+  text-align: center;
+}

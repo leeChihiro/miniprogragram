@@ -1,0 +1,50 @@
+<import src="productOrder-Complete/productOrder-Complete-Template.wxml" />
+<import src="productOrder-NotPay/productOrder-NotPay-Template.wxml" />
+<import src="productOrder-WaitProduct/productOrder-WaitProduct-Template.wxml" />
+<import src="productOrder-WaitSend/productOrder-WaitSend-Template.wxml" />
+
+<view class="swiper-tab">
+  <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">
+    未付款
+  </view>
+  <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">
+    待发货
+  </view>
+  <view class="swiper-tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="clickTab">
+    待收货
+  </view>
+  <view class="swiper-tab-item {{currentTab==3?'active':''}}" data-current="3" bindtap="clickTab">
+    已完成
+  </view>
+</view>
+
+<swiper class="testOrder-all-container" current="{{currentTab}}" duration="300" bindchange="swiperTab">
+  <swiper-item>
+    <view>
+      <block wx:for="{{productOrder_0.productOrderData}}" wx:for-item="productOrder0Item" wx:key="index">
+        <template is="productOrder-NotPay-Template" data="{{...productOrder0Item}}" />
+      </block>
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <view>
+      <block wx:for="{{productOrder_10.productOrderData}}" wx:for-item="productOrder10Item" wx:key="index">
+        <template is="productOrder-WaitProduct-Template" data="{{...productOrder10Item}}" />
+      </block>
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <view>
+      <block wx:for="{{productOrder_1.productOrderData}}" wx:for-item="productOrder1Item" wx:key="index">
+        <template is="productOrder-WaitSend-Template" data="{{...productOrder1Item}}" />
+      </block>
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <view>
+      <block wx:for="{{productOrder_2.productOrderData}}" wx:for-item="productOrder2Item" wx:key="index">
+        <template is="productOrder-Complete-Template" data="{{...productOrder2Item}}" />
+      </block>
+    </view>
+  </swiper-item>
+</swiper>

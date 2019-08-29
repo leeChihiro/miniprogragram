@@ -1,0 +1,31 @@
+<import src='/tpl/search-tpl/search-tpl.wxml' />
+
+<view class='p-heading'></view>
+<view class='p-body'>
+  <template is='searchTpl' />
+  <view class='rank-heading'>
+    <image src='/images/rank/rank-icon.png'></image>
+    <text>品尝榜</text>
+  </view>
+  <view class='rank-body'>
+
+<block wx:for="{{list}}" wx:for-item="item" wx:for-index="index" wx:key="unique">
+     <view class='panel rank-item' data-index="{{index}}">
+      <image src="{{item._LogoAllURL}}" catchtap="onlistTap"  data-index="{{index}}"></image>
+      <view class='rank'>
+        <image src='/images/logo-t.png'></image>
+        <view class='rank-info'>
+          <text class='title'>{{item.StoreName}}</text>
+          <text class='address'>{{item.Address}}</text>
+        </view>
+        <view class='map-btn' catchtap="onMapTap" data-XCoordinates="{{item.XCoordinates}}" data-YCoordinates="{{item.YCoordinates}}">
+          <image src='/images/rank/map-icon.png'></image>
+        </view>
+        <view class='tel-btn' catchtap="onPhone" data-phonenumber="{{item.PhoneNumber}}">
+          <image src='/images/rank/tel-icon.png'></image>
+        </view>
+      </view>
+    </view>
+  </block>
+  </view> 
+</view>

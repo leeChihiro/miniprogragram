@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<view class="container">
+  <image class="avatar" src="{{userInfo.avatarUrl}}"></image>
+  <text class="motto">Hello,{{userInfo.nickName}}</text>
+  <view class="journey-container" bindtap="onTap">
+    <text class="journey">{{motto}}</text>
+  </view>
+</view>

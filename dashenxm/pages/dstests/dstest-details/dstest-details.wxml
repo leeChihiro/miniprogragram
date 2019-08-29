@@ -1,0 +1,24 @@
+<!--pages/dstest-details/dstest-details.wxml-->
+<view>
+  <view>
+    <view class="test-details-img">
+      <image src="{{TestDetails.IMAGE[0]}}"></image>
+    </view>
+    <view class="test-details-text">
+      <view class="test-details-text-1">
+        <text>{{TestDetails.TITLE}}</text>
+        <text style='color:#ff6600;'>￥{{TestDetails.PRICE}}</text>
+      </view>
+      <view class="test-details-text-2">
+        <text>服务详情 ：</text>
+      </view>
+      <view class="test-details-text-3">
+        <text>{{TestDetails.TEXT}}</text>
+      </view>
+    </view>
+  </view>
+  <view style='width:750rpx; height:100rpx;'></view>
+  <view class="test-details-bottom" bindtap='PayAddress' data-title='{{TestDetails.TITLE}}' data-price='{{TestDetails.PRICE}}' data-jcb_id='{{TestDetails.JCB_ID}}'>
+    <text >下一步</text>
+  </view>
+</view>

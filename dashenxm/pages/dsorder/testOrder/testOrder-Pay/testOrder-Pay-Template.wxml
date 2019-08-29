@@ -1,0 +1,25 @@
+<template name="testOrder-Pay-Template">
+  <view class="dsorder-sample-bottom">
+    <view class="SegmentingLine"></view>
+    <view class="sample-bottom-t">
+      <image src="/images/order/time.png"></image>
+      <text style="margin-left:20rpx;">下单时间 : {{testOrder10Item.CREATED}}</text>
+      <text style="float:right; margin-right:20rpx;color:#e36e21;">已付款</text>
+    </view>
+    <view class="sample-bottom-m" bindtap='toDetails' data-jcbddid='{{testOrder10Item.JCBDD_ID}}'>
+      <image src="{{testOrder10Item.IMAGE[0]}}"></image>
+      <view>
+        <text>{{testOrder10Item.TITLE}}</text>
+        <text style="color:#c9c9c9; font-size:30rpx;">数量*1</text>
+      </view>
+    </view>
+    <view class="number">
+      <text>合计 : {{testOrder10Item.PRICE}}元</text>
+    </view>
+    <view class="sample-bottom-fg"></view>
+    <view class="sample-bottom-b">
+      <!-- <view class="sample-bottom-b-btn">待收工具</view> -->
+      <text>已付款，等候商家发送检测工具</text>
+    </view>
+  </view>
+</template>
